@@ -55,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgentsSet.cs">
+      <DependentUpon>ModelTutorial.tt</DependentUpon>
+    </Compile>
     <Compile Include="ClientsSet.cs">
       <DependentUpon>ModelTutorial.tt</DependentUpon>
     </Compile>
@@ -69,6 +72,12 @@
     </Compile>
     <Compile Include="FormClient.Designer.cs">
       <DependentUpon>FormClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromAgents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromAgents.Designer.cs">
+      <DependentUpon>FromAgents.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelTutorial.Context.cs">
       <AutoGen>True</AutoGen>
@@ -92,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClient.resx">
       <DependentUpon>FormClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromAgents.resx">
+      <DependentUpon>FromAgents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,19 +136,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="ModelTutorial.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelTutorial.Context.cs</LastGenOutput>
       <DependentUpon>ModelTutorial.edmx</DependentUpon>
+      <LastGenOutput>ModelTutorial.Context.cs</LastGenOutput>
     </Content>
     <Content Include="ModelTutorial.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelTutorial.edmx</DependentUpon>
       <LastGenOutput>ModelTutorial.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

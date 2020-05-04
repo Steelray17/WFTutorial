@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Esoft_Project
 {
-    public partial class Menu : Form
+    public partial class Menu : System.Windows.Forms.Form
     {
         public Menu()
         {
@@ -25,8 +25,14 @@ namespace Esoft_Project
         private void buttonOpenClients_Click(object sender, EventArgs e)
         {
             //Задаем новую форму из класса Клиент и открываем её
-            Form formClient = new FormClient();
+            System.Windows.Forms.Form formClient = new FormClient();
             formClient.Show();
+        }
+
+        private void buttonOpenAgents_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Form fromAgents = new FromAgents();
+            fromAgents.Show();
         }
     }
 }
