@@ -56,10 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgentsSet.cs">
-      <DependentUpon>ModelTutorial.tt</DependentUpon>
+      <DependentUpon>ModelTutorial1.tt</DependentUpon>
     </Compile>
     <Compile Include="ClientsSet.cs">
-      <DependentUpon>ModelTutorial.tt</DependentUpon>
+      <DependentUpon>ModelTutorial1.tt</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -94,6 +94,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelTutorial.edmx</DependentUpon>
     </Compile>
+    <Compile Include="ModelTutorial1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTutorial1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelTutorial1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTutorial1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelTutorial1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTutorial1.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -120,6 +135,13 @@
     </EntityDeploy>
     <None Include="ModelTutorial.edmx.diagram">
       <DependentUpon>ModelTutorial.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="ModelTutorial1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelTutorial1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelTutorial1.edmx.diagram">
+      <DependentUpon>ModelTutorial1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -148,6 +170,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelTutorial.edmx</DependentUpon>
       <LastGenOutput>ModelTutorial.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelTutorial1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelTutorial1.edmx</DependentUpon>
+      <LastGenOutput>ModelTutorial1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelTutorial1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelTutorial1.edmx</DependentUpon>
+      <LastGenOutput>ModelTutorial1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
