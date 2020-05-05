@@ -19,7 +19,8 @@ namespace Esoft_Project
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            Form formDemand = new FormDemand();
+            formDemand.Show();
         }
 
         private void buttonOpenClients_Click(object sender, EventArgs e)
@@ -33,6 +34,18 @@ namespace Esoft_Project
         {
             System.Windows.Forms.Form fromAgents = new FromAgents();
             fromAgents.Show();
+        }
+
+        private void buttonOpenRealEstates_Click(object sender, EventArgs e)
+        {
+            Form formRealEstate = new FormRealEstate();
+            formRealEstate.Show();
+        }
+
+        private void buttonOpenDemands_Click(object sender, EventArgs e)
+        {
+            Form formSupply = new FormSupply();
+            formSupply.Show();
         }
     }
 }
