@@ -82,6 +82,10 @@
             this.labelMaxArea = new System.Windows.Forms.Label();
             this.textBoxMaxRooms = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxMinFloors = new System.Windows.Forms.TextBox();
+            this.textBoxMaxFloors = new System.Windows.Forms.TextBox();
+            this.labelMinFloors = new System.Windows.Forms.Label();
+            this.labelMaxFloors = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,7 +117,7 @@
             // 
             // textBoxMinPrice
             // 
-            this.textBoxMinPrice.Location = new System.Drawing.Point(180, 28);
+            this.textBoxMinPrice.Location = new System.Drawing.Point(180, 29);
             this.textBoxMinPrice.Name = "textBoxMinPrice";
             this.textBoxMinPrice.Size = new System.Drawing.Size(100, 20);
             this.textBoxMinPrice.TabIndex = 3;
@@ -164,7 +168,7 @@
             // labelMaxPrice
             // 
             this.labelMaxPrice.AutoSize = true;
-            this.labelMaxPrice.Location = new System.Drawing.Point(180, 50);
+            this.labelMaxPrice.Location = new System.Drawing.Point(180, 52);
             this.labelMaxPrice.Name = "labelMaxPrice";
             this.labelMaxPrice.Size = new System.Drawing.Size(111, 13);
             this.labelMaxPrice.TabIndex = 9;
@@ -391,7 +395,7 @@
             // 
             // textBoxMinArea
             // 
-            this.textBoxMinArea.Location = new System.Drawing.Point(310, 28);
+            this.textBoxMinArea.Location = new System.Drawing.Point(310, 29);
             this.textBoxMinArea.Name = "textBoxMinArea";
             this.textBoxMinArea.Size = new System.Drawing.Size(100, 20);
             this.textBoxMinArea.TabIndex = 29;
@@ -419,7 +423,7 @@
             // 
             // textBoxMaxFloor
             // 
-            this.textBoxMaxFloor.Location = new System.Drawing.Point(440, 69);
+            this.textBoxMaxFloor.Location = new System.Drawing.Point(440, 68);
             this.textBoxMaxFloor.Name = "textBoxMaxFloor";
             this.textBoxMaxFloor.Size = new System.Drawing.Size(100, 20);
             this.textBoxMaxFloor.TabIndex = 33;
@@ -463,7 +467,7 @@
             // labelMaxRooms
             // 
             this.labelMaxRooms.AutoSize = true;
-            this.labelMaxRooms.Location = new System.Drawing.Point(570, 54);
+            this.labelMaxRooms.Location = new System.Drawing.Point(570, 52);
             this.labelMaxRooms.Name = "labelMaxRooms";
             this.labelMaxRooms.Size = new System.Drawing.Size(160, 13);
             this.labelMaxRooms.TabIndex = 38;
@@ -480,7 +484,7 @@
             // 
             // textBoxMaxRooms
             // 
-            this.textBoxMaxRooms.Location = new System.Drawing.Point(570, 69);
+            this.textBoxMaxRooms.Location = new System.Drawing.Point(570, 68);
             this.textBoxMaxRooms.Name = "textBoxMaxRooms";
             this.textBoxMaxRooms.Size = new System.Drawing.Size(100, 20);
             this.textBoxMaxRooms.TabIndex = 40;
@@ -495,11 +499,47 @@
             this.pictureBox1.TabIndex = 41;
             this.pictureBox1.TabStop = false;
             // 
+            // textBoxMinFloors
+            // 
+            this.textBoxMinFloors.Location = new System.Drawing.Point(440, 29);
+            this.textBoxMinFloors.Name = "textBoxMinFloors";
+            this.textBoxMinFloors.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMinFloors.TabIndex = 42;
+            // 
+            // textBoxMaxFloors
+            // 
+            this.textBoxMaxFloors.Location = new System.Drawing.Point(440, 68);
+            this.textBoxMaxFloors.Name = "textBoxMaxFloors";
+            this.textBoxMaxFloors.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMaxFloors.TabIndex = 43;
+            // 
+            // labelMinFloors
+            // 
+            this.labelMinFloors.AutoSize = true;
+            this.labelMinFloors.Location = new System.Drawing.Point(440, 13);
+            this.labelMinFloors.Name = "labelMinFloors";
+            this.labelMinFloors.Size = new System.Drawing.Size(108, 13);
+            this.labelMinFloors.TabIndex = 44;
+            this.labelMinFloors.Text = "Минимальный этаж";
+            // 
+            // labelMaxFloors
+            // 
+            this.labelMaxFloors.AutoSize = true;
+            this.labelMaxFloors.Location = new System.Drawing.Point(440, 52);
+            this.labelMaxFloors.Name = "labelMaxFloors";
+            this.labelMaxFloors.Size = new System.Drawing.Size(114, 13);
+            this.labelMaxFloors.TabIndex = 45;
+            this.labelMaxFloors.Text = "Максимальный этаж";
+            // 
             // FormDemand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 237);
+            this.Controls.Add(this.labelMaxFloors);
+            this.Controls.Add(this.labelMinFloors);
+            this.Controls.Add(this.textBoxMaxFloors);
+            this.Controls.Add(this.textBoxMinFloors);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxMaxRooms);
             this.Controls.Add(this.labelMaxArea);
@@ -592,5 +632,9 @@
         private System.Windows.Forms.Label labelMaxArea;
         private System.Windows.Forms.TextBox textBoxMaxRooms;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBoxMinFloors;
+        private System.Windows.Forms.TextBox textBoxMaxFloors;
+        private System.Windows.Forms.Label labelMinFloors;
+        private System.Windows.Forms.Label labelMaxFloors;
     }
 }

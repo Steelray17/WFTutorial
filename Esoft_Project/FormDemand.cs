@@ -18,7 +18,7 @@ namespace Esoft_Project
             comboBoxType.SelectedIndex = 0;
             ShowAgents();
             ShowClients();
-            ShowRealEstateSet();
+            ShowDemandSet();
         }
 
         void ShowAgents()
@@ -83,6 +83,10 @@ namespace Esoft_Project
                 //скрываем ненужные элементы
                 listViewDemandSet_Land.Visible = false;
                 listViewDemandSet__House.Visible = false;
+                textBoxMinFloors.Visible = false;
+                textBoxMaxFloors.Visible = false;
+                labelMinFloors.Visible = false;
+                labelMaxFloors.Visible = false;
 
 
                 //Очищаем все видимые элементы
@@ -90,9 +94,15 @@ namespace Esoft_Project
                 textBoxMaxPrice.Text = "";
                 comboBoxClients.Text = "";
                 comboBoxAgents.Text = "";
+                textBoxMinRooms.Text = "";
+                textBoxMaxRooms.Text = "";
+                textBoxMinFloor.Text = "";
+                textBoxMaxFloor.Text = "";
+                textBoxMinArea.Text = "";
+                textBoxMaxArea.Text = "";
             }
 
-            //изменения формы если выбрана строчка "Земля" (её индекс 1)
+            //изменения формы если выбрана строчка "Земля" (её индекс 2)
             else if (comboBoxType.SelectedIndex == 2)
             {
                 //Делаем видимые нужные элементы
@@ -120,6 +130,10 @@ namespace Esoft_Project
                 textBoxMaxFloor.Visible = false;
                 labelMinFloor.Visible = false;
                 labelMaxFloor.Visible = false;
+                textBoxMinFloors.Visible = false;
+                textBoxMaxFloors.Visible = false;
+                labelMinFloors.Visible = false;
+                labelMaxFloors.Visible = false;
 
 
                 //Очищаем все видимые элементы
@@ -127,9 +141,11 @@ namespace Esoft_Project
                 textBoxMaxPrice.Text = "";
                 comboBoxClients.Text = "";
                 comboBoxAgents.Text = "";
+                textBoxMinArea.Text = "";
+                textBoxMaxArea.Text = "";
             }
 
-            //изменение формы, если выбрана строчка "Дом" (её индекс 2)
+            //изменение формы, если выбрана строчка "Дом" (её индекс 1)
             else if (comboBoxType.SelectedIndex == 1)
             {
                 //Делаем видимые нужные элементы
@@ -141,10 +157,10 @@ namespace Esoft_Project
                 labelMaxPrice.Visible = true;
                 textBoxMinPrice.Visible = true;
                 textBoxMaxPrice.Visible = true;
-                textBoxMinFloor.Visible = true;
-                textBoxMaxFloor.Visible = true;
-                labelMinFloor.Visible = true;
-                labelMaxFloor.Visible = true;
+                textBoxMinFloors.Visible = true;
+                textBoxMaxFloors.Visible = true;
+                labelMinFloors.Visible = true;
+                labelMaxFloors.Visible = true;
                 textBoxMinArea.Visible = true;
                 textBoxMaxArea.Visible = true;
                 labelMaxArea.Visible = true;
@@ -157,12 +173,26 @@ namespace Esoft_Project
                 textBoxMaxRooms.Visible = false;
                 labelMinRooms.Visible = false;
                 labelMaxRooms.Visible = false;
+                textBoxMinFloor.Visible = false;
+                textBoxMaxFloor.Visible = false;
+                labelMinFloor.Visible = false;
+                labelMaxFloor.Visible = false;
 
                 //Очищаем все видимые элементы
                 textBoxMinPrice.Text = "";
                 textBoxMaxPrice.Text = "";
                 comboBoxClients.Text = "";
                 comboBoxAgents.Text = "";
+                textBoxMinPrice.Text = "";
+                textBoxMaxPrice.Text = "";
+                comboBoxClients.Text = "";
+                comboBoxAgents.Text = "";
+                textBoxMinRooms.Text = "";
+                textBoxMaxRooms.Text = "";
+                textBoxMinFloors.Text = "";
+                textBoxMaxFloors.Text = "";
+                textBoxMinArea.Text = "";
+                textBoxMaxArea.Text = "";
             }
         }
 
@@ -171,6 +201,8 @@ namespace Esoft_Project
             //Создаем новый экземпляр класса Объект недвижимости
             DemandSet demandSet = new DemandSet();
             //Делаем ссылку на объект, который храниться в textBox-ах (сначала общие поля)
+            demandSet.IdClient = Convert.ToInt32(comboBoxClients.SelectedItem.ToString().Split('.')[0]);
+            demandSet.IdAgent = Convert.ToInt32(comboBoxAgents.SelectedItem.ToString().Split('.')[0]);
             demandSet.MinPrice = Convert.ToInt64(textBoxMinPrice.Text);
             demandSet.MaxPrice = Convert.ToInt64(textBoxMaxPrice.Text);
             demandSet.MinArea = Convert.ToInt32(textBoxMinArea.Text);
@@ -189,20 +221,20 @@ namespace Esoft_Project
             else if (comboBoxType.SelectedIndex == 1)
             {
                 demandSet.Type = 1;
-                demandSet.MinFloor = Convert.ToInt32(textBoxMinFloor.Text);
-                demandSet.MaxFloor = Convert.ToInt32(textBoxMaxFloor.Text);
+                demandSet.MinFloors = Convert.ToInt32(textBoxMinFloors.Text);
+                demandSet.MaxFloors = Convert.ToInt32(textBoxMaxFloors.Text);
             }
             //Дополнительные поля для типа "Земля"
             else
             {
                 demandSet.Type = 2;
             }
-            //Добавляем в таблицу RealEstateSet новый объект недвижимости realEstate
+            //Добавляем в таблицу DemandSet новый объект недвижимости demandSet
             Program.wftDb.DemandSet.Add(demandSet);
             //Сохраняем изменения в модели wftDb
             Program.wftDb.SaveChanges();
         }
-        void ShowRealEstateSet()
+        void ShowDemandSet()
         {
             //Предварительно очищаем все ListView
             listViewDemandSet_Apartment.Items.Clear();
@@ -211,10 +243,10 @@ namespace Esoft_Project
             //Проходим по коллекции клиентов, которые находятся в базе
             foreach (DemandSet demandSet in Program.wftDb.DemandSet)
             {
-                //отображение квартир в listViewRealEstateSet_Apartment
+                //отображение квартир в listViewDemandSet_Apartment
                 if (demandSet.Type == 0)
                 {
-                    //создадим новый элемент в listViewRealEstateSet_Apartment с помощью массива строк
+                    //создадим новый элемент в listViewDemandSet_Apartment с помощью массива строк
                     ListViewItem item = new ListViewItem(new string[]
                     {
                         //указываем необходимые поля
@@ -231,13 +263,13 @@ namespace Esoft_Project
                     });
                     //указываем по какому тегу выбраны
                     item.Tag = demandSet;
-                    //добавляем элементы в listViewRealEstateSet_Apartment для отображения
+                    //добавляем элементы в listViewDemandSet__Apartment для отображения
                     listViewDemandSet_Apartment.Items.Add(item);
                 }
-                //отображение домов в listViewRealEstateSet_House
+                //отображение домов в listViewDemandSet__House
                 else if (demandSet.Type == 1)
                 {
-                    //создадим новый элемент в listViewRealEstateSet_House с помощью массива строк
+                    //создадим новый элемент в listViewDemandSet__House с помощью массива строк
                     ListViewItem item = new ListViewItem(new string[]
                     {
                         //указываем необходимые поля
@@ -245,19 +277,19 @@ namespace Esoft_Project
                         demandSet.AgentsSet.LastName+" "+demandSet.AgentsSet.FirstName+" "+demandSet.AgentsSet.MiddleName,
                         demandSet.MinArea.ToString(),
                         demandSet.MaxArea.ToString(),
-                        demandSet.MinFloor.ToString(),
-                        demandSet.MaxFloor.ToString(),
+                        demandSet.MinFloors.ToString(),
+                        demandSet.MaxFloors.ToString(),
                         demandSet.MinPrice.ToString(),
                         demandSet.MaxPrice.ToString()
                     });
                     //указываем пок акому тегу выбраны элементы
                     item.Tag = demandSet;
-                    //добавляем элементы в listViewRealEstateSet_House для отображения
+                    //добавляем элементы в listViewDemandSet__House для отображения
                     listViewDemandSet__House.Items.Add(item);
                 }
                 else
                 {
-                    //создадим новый элемент в listViewRealEstateSet_Land с помощью массива строк
+                    //создадим новый элемент в listViewDemandSet__Land с помощью массива строк
                     ListViewItem item = new ListViewItem(new string[]
                     {
                         //указываем необходимые поля
@@ -270,7 +302,7 @@ namespace Esoft_Project
                     });
                     //указываем по какому тегу выбраны элементы
                     item.Tag = demandSet;
-                    //добавляем элементы в listViewRealEstateSet_Land для отображения
+                    //добавляем элементы в listViewDemandSet__Land для отображения
                     listViewDemandSet_Land.Items.Add(item);
                 }
             }
@@ -327,8 +359,8 @@ namespace Esoft_Project
                 textBoxMaxPrice.Text = demandSet.MaxPrice.ToString();
                 textBoxMinArea.Text = demandSet.MinArea.ToString();
                 textBoxMaxArea.Text = demandSet.MaxArea.ToString();
-                textBoxMinFloor.Text = demandSet.MinFloor.ToString();
-                textBoxMaxFloor.Text = demandSet.MaxFloor.ToString();
+                textBoxMinFloors.Text = demandSet.MinFloors.ToString();
+                textBoxMaxFloors.Text = demandSet.MaxFloors.ToString();
                 comboBoxClients.Text = demandSet.ClientsSet.LastName + " " + demandSet.ClientsSet.FirstName + " " + demandSet.ClientsSet.MiddleName.ToString();
                 comboBoxAgents.Text = demandSet.AgentsSet.LastName + " " + demandSet.AgentsSet.FirstName + " " + demandSet.AgentsSet.MiddleName.ToString();
             }
@@ -339,8 +371,8 @@ namespace Esoft_Project
                 textBoxMaxPrice.Text = "";
                 textBoxMinArea.Text = "";
                 textBoxMaxArea.Text = "";
-                textBoxMinFloor.Text = "";
-                textBoxMaxFloor.Text = "";
+                textBoxMinFloors.Text = "";
+                textBoxMaxFloors.Text = "";
                 comboBoxClients.Text = "";
                 comboBoxAgents.Text = "";
             }
@@ -375,7 +407,7 @@ namespace Esoft_Project
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
-            //выбран тип "Квартира", работа с listViewRealEstateSet_Apartment
+            //выбран тип "Квартира", работа с listViewDemandSet_Apartment
             if (comboBoxType.SelectedIndex == 0)
             {
                 //если в listView выбран элемент
@@ -396,11 +428,11 @@ namespace Esoft_Project
                     demandSet.IdClient = Convert.ToInt32(comboBoxClients.SelectedItem.ToString().Split('.')[0]);
                     //сохраняем изменения в модели wftDb
                     Program.wftDb.SaveChanges();
-                    //отображаем в listViewRealEstateSet_Apartment
-                    ShowRealEstateSet();
+                    //отображаем в listViewDemandSet_Apartment
+                    ShowDemandSet();
                 }
             }
-            //выбран тип "Дом", работа с listViewRealEstateSet_House
+            //выбран тип "Дом", работа с listViewDemandSet_House
             else if (comboBoxType.SelectedIndex == 1)
             {
                 //если в listView выбран элемент
@@ -413,17 +445,17 @@ namespace Esoft_Project
                     demandSet.MaxPrice = Convert.ToInt64(textBoxMaxPrice.Text);
                     demandSet.MinArea = Convert.ToInt32(textBoxMinArea.Text);
                     demandSet.MaxArea = Convert.ToInt32(textBoxMaxArea.Text);
-                    demandSet.MinFloor = Convert.ToInt32(textBoxMinFloor.Text);
-                    demandSet.MaxFloor = Convert.ToInt32(textBoxMaxFloor.Text);
+                    demandSet.MinFloors = Convert.ToInt32(textBoxMinFloors.Text);
+                    demandSet.MaxFloors = Convert.ToInt32(textBoxMaxFloors.Text);
                     demandSet.IdAgent = Convert.ToInt32(comboBoxAgents.SelectedItem.ToString().Split('.')[0]);
                     demandSet.IdClient = Convert.ToInt32(comboBoxClients.SelectedItem.ToString().Split('.')[0]);
                     //сохраняем изменения в модели wftDb
                     Program.wftDb.SaveChanges();
-                    //отображаем в listViewRealEstateSet_House
-                    ShowRealEstateSet();
+                    //отображаем в listViewDemandSet_House
+                    ShowDemandSet();
                 }
             }
-            //выбран тип "Земли", работа с listViewRealEstateSet_Land
+            //выбран тип "Земли", работа с listViewDemandSet_Land
             else
             {
                 //если в listView выбран элемент
@@ -440,8 +472,8 @@ namespace Esoft_Project
                     demandSet.IdClient = Convert.ToInt32(comboBoxClients.SelectedItem.ToString().Split('.')[0]);
                     //сохраняем изменения в модели wftDb
                     Program.wftDb.SaveChanges();
-                    //отображаем в listViewRealEstateSet_Land
-                    ShowRealEstateSet();
+                    //отображаем в listViewDemandSet_Land
+                    ShowDemandSet();
                 }
             }
         }
@@ -451,7 +483,7 @@ namespace Esoft_Project
             //пробуем совершить действие
             try
             {
-                //выбран тип "Квартира", работа с listViewRealEstateSet_Apartment
+                //выбран тип "Квартира", работа с listViewDemandSet_Apartment
                 if (comboBoxType.SelectedIndex == 0)
                 {
                     //если в listView выбран элемент
@@ -464,7 +496,7 @@ namespace Esoft_Project
                         //сохраняем изменения
                         Program.wftDb.SaveChanges();
                         //отображаем обновленный список
-                        ShowRealEstateSet();
+                        ShowDemandSet();
                     }
                     //очищаем текстовые поля
                     textBoxMinPrice.Text = "";
@@ -478,7 +510,7 @@ namespace Esoft_Project
                     comboBoxClients.Text = "";
                     comboBoxAgents.Text = "";
                 }
-                //выбран тип "Дом", работа с listViewRealEstateSet_House
+                //выбран тип "Дом", работа с listViewDemandSet_House
                 else if (comboBoxType.SelectedIndex == 1)
                 {
                     //если в listView выбран элемент
@@ -491,19 +523,19 @@ namespace Esoft_Project
                         //сохраняем изменения
                         Program.wftDb.SaveChanges();
                         //отображаем обновленный список
-                        ShowRealEstateSet();
+                        ShowDemandSet();
                     }
                     //очищаем текстовые поля
                     textBoxMinPrice.Text = "";
                     textBoxMaxPrice.Text = "";
                     textBoxMinArea.Text = "";
                     textBoxMaxArea.Text = "";
-                    textBoxMinFloor.Text = "";
-                    textBoxMaxFloor.Text = "";
+                    textBoxMinFloors.Text = "";
+                    textBoxMaxFloors.Text = "";
                     comboBoxClients.Text = "";
                     comboBoxAgents.Text = "";
                 }
-                //выбран тип "Земля", работа с listViewRealEstateSet_Land
+                //выбран тип "Земля", работа с listViewDemandSet_Land
                 else
                 {
                     //если в listView выбран элемент
@@ -516,7 +548,7 @@ namespace Esoft_Project
                         //сохраняем изменения
                         Program.wftDb.SaveChanges();
                         //отображаем обновленный список
-                        ShowRealEstateSet();
+                        ShowDemandSet();
                     }
                     //очищаем текстовые поля
                     textBoxMinPrice.Text = "";
