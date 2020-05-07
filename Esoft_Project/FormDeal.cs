@@ -158,6 +158,8 @@ namespace Esoft_Project
                 //
                 listViewDealSet.Items.Add(item);
             }
+            //выравниваем столбцы во всех listView
+            listViewDealSet.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)

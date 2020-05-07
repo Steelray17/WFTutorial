@@ -32,6 +32,12 @@
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.listViewClient = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonAdd = new System.Windows.Forms.Button();
             this.textBoxMiddleName = new System.Windows.Forms.TextBox();
             this.textBoxLastName = new System.Windows.Forms.TextBox();
@@ -43,27 +49,25 @@
             this.labelEmail = new System.Windows.Forms.Label();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(12, 25);
+            this.textBoxFirstName.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.textBoxFirstName.Location = new System.Drawing.Point(118, 25);
+            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(15);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFirstName.Size = new System.Drawing.Size(100, 21);
             this.textBoxFirstName.TabIndex = 0;
             // 
             // labelFirstName
             // 
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(9, 9);
+            this.labelFirstName.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelFirstName.Location = new System.Drawing.Point(115, 9);
+            this.labelFirstName.Margin = new System.Windows.Forms.Padding(15);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(29, 13);
             this.labelFirstName.TabIndex = 1;
@@ -78,110 +82,18 @@
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
+            this.listViewClient.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.listViewClient.FullRowSelect = true;
             this.listViewClient.GridLines = true;
             this.listViewClient.HideSelection = false;
-            this.listViewClient.Location = new System.Drawing.Point(118, 12);
+            this.listViewClient.Location = new System.Drawing.Point(118, 64);
+            this.listViewClient.Margin = new System.Windows.Forms.Padding(15);
             this.listViewClient.Name = "listViewClient";
             this.listViewClient.Size = new System.Drawing.Size(517, 189);
             this.listViewClient.TabIndex = 2;
             this.listViewClient.UseCompatibleStateImageBehavior = false;
             this.listViewClient.View = System.Windows.Forms.View.Details;
             this.listViewClient.SelectedIndexChanged += new System.EventHandler(this.listViewClient_SelectedIndexChanged);
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.Location = new System.Drawing.Point(323, 207);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(100, 32);
-            this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
-            // textBoxMiddleName
-            // 
-            this.textBoxMiddleName.Location = new System.Drawing.Point(12, 64);
-            this.textBoxMiddleName.Name = "textBoxMiddleName";
-            this.textBoxMiddleName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMiddleName.TabIndex = 4;
-            // 
-            // textBoxLastName
-            // 
-            this.textBoxLastName.Location = new System.Drawing.Point(12, 103);
-            this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxLastName.TabIndex = 5;
-            // 
-            // textBoxPhone
-            // 
-            this.textBoxPhone.Location = new System.Drawing.Point(12, 142);
-            this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPhone.TabIndex = 6;
-            // 
-            // textBoxEmail
-            // 
-            this.textBoxEmail.Location = new System.Drawing.Point(12, 181);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEmail.TabIndex = 7;
-            // 
-            // labelMiddleName
-            // 
-            this.labelMiddleName.AutoSize = true;
-            this.labelMiddleName.Location = new System.Drawing.Point(9, 48);
-            this.labelMiddleName.Name = "labelMiddleName";
-            this.labelMiddleName.Size = new System.Drawing.Size(54, 13);
-            this.labelMiddleName.TabIndex = 8;
-            this.labelMiddleName.Text = "Отчество";
-            // 
-            // labelLastName
-            // 
-            this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(9, 87);
-            this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(56, 13);
-            this.labelLastName.TabIndex = 9;
-            this.labelLastName.Text = "Фамилия";
-            // 
-            // labelPhone
-            // 
-            this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(9, 126);
-            this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(52, 13);
-            this.labelPhone.TabIndex = 10;
-            this.labelPhone.Text = "Телефон";
-            // 
-            // labelEmail
-            // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(9, 165);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(37, 13);
-            this.labelEmail.TabIndex = 11;
-            this.labelEmail.Text = "Почта";
-            // 
-            // buttonEdit
-            // 
-            this.buttonEdit.Location = new System.Drawing.Point(429, 207);
-            this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(100, 32);
-            this.buttonEdit.TabIndex = 12;
-            this.buttonEdit.Text = "Изменить";
-            this.buttonEdit.UseVisualStyleBackColor = true;
-            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
-            // 
-            // buttonDel
-            // 
-            this.buttonDel.Location = new System.Drawing.Point(535, 207);
-            this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(100, 32);
-            this.buttonDel.TabIndex = 13;
-            this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
-            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // columnHeader1
             // 
@@ -207,12 +119,129 @@
             // 
             this.columnHeader6.Text = "Почта";
             // 
+            // buttonAdd
+            // 
+            this.buttonAdd.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.buttonAdd.Location = new System.Drawing.Point(323, 259);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(15);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(100, 36);
+            this.buttonAdd.TabIndex = 3;
+            this.buttonAdd.Text = "Создать";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
+            // textBoxMiddleName
+            // 
+            this.textBoxMiddleName.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.textBoxMiddleName.Location = new System.Drawing.Point(224, 25);
+            this.textBoxMiddleName.Margin = new System.Windows.Forms.Padding(15);
+            this.textBoxMiddleName.Name = "textBoxMiddleName";
+            this.textBoxMiddleName.Size = new System.Drawing.Size(100, 21);
+            this.textBoxMiddleName.TabIndex = 4;
+            // 
+            // textBoxLastName
+            // 
+            this.textBoxLastName.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.textBoxLastName.Location = new System.Drawing.Point(12, 25);
+            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(15);
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(100, 21);
+            this.textBoxLastName.TabIndex = 5;
+            // 
+            // textBoxPhone
+            // 
+            this.textBoxPhone.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.textBoxPhone.Location = new System.Drawing.Point(12, 64);
+            this.textBoxPhone.Margin = new System.Windows.Forms.Padding(15);
+            this.textBoxPhone.Name = "textBoxPhone";
+            this.textBoxPhone.Size = new System.Drawing.Size(100, 21);
+            this.textBoxPhone.TabIndex = 6;
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.textBoxEmail.Location = new System.Drawing.Point(12, 103);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(15);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(100, 21);
+            this.textBoxEmail.TabIndex = 7;
+            // 
+            // labelMiddleName
+            // 
+            this.labelMiddleName.AutoSize = true;
+            this.labelMiddleName.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelMiddleName.Location = new System.Drawing.Point(221, 9);
+            this.labelMiddleName.Margin = new System.Windows.Forms.Padding(15);
+            this.labelMiddleName.Name = "labelMiddleName";
+            this.labelMiddleName.Size = new System.Drawing.Size(57, 13);
+            this.labelMiddleName.TabIndex = 8;
+            this.labelMiddleName.Text = "Отчество";
+            // 
+            // labelLastName
+            // 
+            this.labelLastName.AutoSize = true;
+            this.labelLastName.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelLastName.Location = new System.Drawing.Point(9, 9);
+            this.labelLastName.Margin = new System.Windows.Forms.Padding(15);
+            this.labelLastName.Name = "labelLastName";
+            this.labelLastName.Size = new System.Drawing.Size(54, 13);
+            this.labelLastName.TabIndex = 9;
+            this.labelLastName.Text = "Фамилия";
+            // 
+            // labelPhone
+            // 
+            this.labelPhone.AutoSize = true;
+            this.labelPhone.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelPhone.Location = new System.Drawing.Point(9, 48);
+            this.labelPhone.Margin = new System.Windows.Forms.Padding(15);
+            this.labelPhone.Name = "labelPhone";
+            this.labelPhone.Size = new System.Drawing.Size(52, 13);
+            this.labelPhone.TabIndex = 10;
+            this.labelPhone.Text = "Телефон";
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelEmail.Location = new System.Drawing.Point(9, 87);
+            this.labelEmail.Margin = new System.Windows.Forms.Padding(15);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(39, 13);
+            this.labelEmail.TabIndex = 11;
+            this.labelEmail.Text = "Почта";
+            // 
+            // buttonEdit
+            // 
+            this.buttonEdit.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.buttonEdit.Location = new System.Drawing.Point(429, 259);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(15);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(100, 36);
+            this.buttonEdit.TabIndex = 12;
+            this.buttonEdit.Text = "Изменить";
+            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
+            // 
+            // buttonDel
+            // 
+            this.buttonDel.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.buttonDel.Location = new System.Drawing.Point(535, 259);
+            this.buttonDel.Margin = new System.Windows.Forms.Padding(15);
+            this.buttonDel.Name = "buttonDel";
+            this.buttonDel.Size = new System.Drawing.Size(100, 36);
+            this.buttonDel.TabIndex = 13;
+            this.buttonDel.Text = "Удалить";
+            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 207);
+            this.pictureBox1.Location = new System.Drawing.Point(464, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(251, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(171, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
@@ -220,7 +249,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 301);
+            this.ClientSize = new System.Drawing.Size(638, 298);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonEdit);
@@ -236,6 +265,7 @@
             this.Controls.Add(this.listViewClient);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.textBoxFirstName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormClient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Клиенты";

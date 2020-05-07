@@ -120,6 +120,7 @@ namespace Esoft_Project
                 //Добавляем элементы в listViewSupplySet для отображения
                 listViewSupplySet.Items.Add(item);
             }
+            listViewSupplySet.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
