@@ -123,6 +123,8 @@
             // 
             // comboBoxSupply
             // 
+            this.comboBoxSupply.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.comboBoxSupply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxSupply.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxSupply.FormattingEnabled = true;
             this.comboBoxSupply.Location = new System.Drawing.Point(3, 25);
@@ -134,6 +136,8 @@
             // 
             // comboBoxDemand
             // 
+            this.comboBoxDemand.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.comboBoxDemand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxDemand.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxDemand.FormattingEnabled = true;
             this.comboBoxDemand.Location = new System.Drawing.Point(3, 65);
@@ -145,6 +149,8 @@
             // 
             // textBoxSellerCompanyDeductions
             // 
+            this.textBoxSellerCompanyDeductions.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxSellerCompanyDeductions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxSellerCompanyDeductions.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxSellerCompanyDeductions.Location = new System.Drawing.Point(3, 122);
             this.textBoxSellerCompanyDeductions.Margin = new System.Windows.Forms.Padding(15);
@@ -154,6 +160,8 @@
             // 
             // textBoxAgentSellerDeductions
             // 
+            this.textBoxAgentSellerDeductions.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxAgentSellerDeductions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxAgentSellerDeductions.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxAgentSellerDeductions.Location = new System.Drawing.Point(3, 161);
             this.textBoxAgentSellerDeductions.Margin = new System.Windows.Forms.Padding(15);
@@ -163,6 +171,8 @@
             // 
             // textCustomerCompanyDeductions
             // 
+            this.textCustomerCompanyDeductions.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textCustomerCompanyDeductions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textCustomerCompanyDeductions.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textCustomerCompanyDeductions.Location = new System.Drawing.Point(3, 203);
             this.textCustomerCompanyDeductions.Margin = new System.Windows.Forms.Padding(15);
@@ -172,6 +182,8 @@
             // 
             // textBoxAgentCustomerDeductions
             // 
+            this.textBoxAgentCustomerDeductions.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxAgentCustomerDeductions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxAgentCustomerDeductions.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxAgentCustomerDeductions.Location = new System.Drawing.Point(3, 242);
             this.textBoxAgentCustomerDeductions.Margin = new System.Windows.Forms.Padding(15);
@@ -234,6 +246,8 @@
             // 
             // buttonDel
             // 
+            this.buttonDel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDel.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonDel.Location = new System.Drawing.Point(828, 269);
             this.buttonDel.Margin = new System.Windows.Forms.Padding(15);
@@ -241,11 +255,13 @@
             this.buttonDel.Size = new System.Drawing.Size(100, 36);
             this.buttonDel.TabIndex = 28;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // buttonEdit
             // 
+            this.buttonEdit.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonEdit.Location = new System.Drawing.Point(719, 269);
             this.buttonEdit.Margin = new System.Windows.Forms.Padding(15);
@@ -253,11 +269,13 @@
             this.buttonEdit.Size = new System.Drawing.Size(100, 36);
             this.buttonEdit.TabIndex = 27;
             this.buttonEdit.Text = "Изменить";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.Location = new System.Drawing.Point(610, 269);
             this.buttonAdd.Margin = new System.Windows.Forms.Padding(15);
@@ -265,7 +283,7 @@
             this.buttonAdd.Size = new System.Drawing.Size(100, 36);
             this.buttonAdd.TabIndex = 26;
             this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // pictureBox1

@@ -52,6 +52,8 @@
             // 
             // textBoxFirstName
             // 
+            this.textBoxFirstName.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxFirstName.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxFirstName.Location = new System.Drawing.Point(12, 51);
             this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(15);
@@ -61,6 +63,8 @@
             // 
             // textBoxMiddleName
             // 
+            this.textBoxMiddleName.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxMiddleName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMiddleName.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMiddleName.Location = new System.Drawing.Point(12, 90);
             this.textBoxMiddleName.Margin = new System.Windows.Forms.Padding(15);
@@ -70,6 +74,8 @@
             // 
             // textBoxLastName
             // 
+            this.textBoxLastName.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxLastName.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxLastName.Location = new System.Drawing.Point(12, 129);
             this.textBoxLastName.Margin = new System.Windows.Forms.Padding(15);
@@ -79,6 +85,8 @@
             // 
             // textBoxShare
             // 
+            this.textBoxShare.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxShare.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxShare.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxShare.Location = new System.Drawing.Point(12, 168);
             this.textBoxShare.Margin = new System.Windows.Forms.Padding(15);
@@ -173,6 +181,8 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.Location = new System.Drawing.Point(111, 210);
             this.buttonAdd.Margin = new System.Windows.Forms.Padding(15);
@@ -180,11 +190,13 @@
             this.buttonAdd.Size = new System.Drawing.Size(100, 36);
             this.buttonAdd.TabIndex = 9;
             this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonEdit
             // 
+            this.buttonEdit.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonEdit.Location = new System.Drawing.Point(217, 210);
             this.buttonEdit.Margin = new System.Windows.Forms.Padding(15);
@@ -192,11 +204,13 @@
             this.buttonEdit.Size = new System.Drawing.Size(100, 36);
             this.buttonEdit.TabIndex = 10;
             this.buttonEdit.Text = "Изменить";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDel
             // 
+            this.buttonDel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDel.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonDel.Location = new System.Drawing.Point(323, 210);
             this.buttonDel.Margin = new System.Windows.Forms.Padding(15);
@@ -204,7 +218,7 @@
             this.buttonDel.Size = new System.Drawing.Size(100, 36);
             this.buttonDel.TabIndex = 11;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // pictureBox1

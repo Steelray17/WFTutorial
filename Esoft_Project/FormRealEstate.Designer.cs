@@ -87,6 +87,8 @@
             // 
             // textBoxAddress_City
             // 
+            this.textBoxAddress_City.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxAddress_City.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxAddress_City.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxAddress_City.Location = new System.Drawing.Point(8, 25);
             this.textBoxAddress_City.Margin = new System.Windows.Forms.Padding(15);
@@ -96,6 +98,8 @@
             // 
             // textBoxAddress_Street
             // 
+            this.textBoxAddress_Street.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxAddress_Street.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxAddress_Street.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxAddress_Street.Location = new System.Drawing.Point(8, 64);
             this.textBoxAddress_Street.Margin = new System.Windows.Forms.Padding(15);
@@ -105,6 +109,8 @@
             // 
             // textBoxAddress_House
             // 
+            this.textBoxAddress_House.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxAddress_House.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxAddress_House.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxAddress_House.Location = new System.Drawing.Point(8, 103);
             this.textBoxAddress_House.Margin = new System.Windows.Forms.Padding(15);
@@ -114,6 +120,8 @@
             // 
             // textBoxAddress_Number
             // 
+            this.textBoxAddress_Number.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxAddress_Number.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxAddress_Number.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxAddress_Number.Location = new System.Drawing.Point(8, 142);
             this.textBoxAddress_Number.Margin = new System.Windows.Forms.Padding(15);
@@ -123,6 +131,8 @@
             // 
             // textBoxCoordinate_latitude
             // 
+            this.textBoxCoordinate_latitude.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxCoordinate_latitude.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxCoordinate_latitude.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxCoordinate_latitude.Location = new System.Drawing.Point(148, 25);
             this.textBoxCoordinate_latitude.Margin = new System.Windows.Forms.Padding(15);
@@ -132,6 +142,8 @@
             // 
             // textBoxCoordinate_longitude
             // 
+            this.textBoxCoordinate_longitude.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxCoordinate_longitude.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxCoordinate_longitude.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxCoordinate_longitude.Location = new System.Drawing.Point(148, 64);
             this.textBoxCoordinate_longitude.Margin = new System.Windows.Forms.Padding(15);
@@ -141,6 +153,8 @@
             // 
             // textBoxTotalArea
             // 
+            this.textBoxTotalArea.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxTotalArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxTotalArea.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxTotalArea.Location = new System.Drawing.Point(288, 25);
             this.textBoxTotalArea.Margin = new System.Windows.Forms.Padding(15);
@@ -150,6 +164,8 @@
             // 
             // textBoxRooms
             // 
+            this.textBoxRooms.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxRooms.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxRooms.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxRooms.Location = new System.Drawing.Point(288, 64);
             this.textBoxRooms.Margin = new System.Windows.Forms.Padding(15);
@@ -159,6 +175,8 @@
             // 
             // textBoxFloor
             // 
+            this.textBoxFloor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxFloor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxFloor.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxFloor.Location = new System.Drawing.Point(288, 104);
             this.textBoxFloor.Margin = new System.Windows.Forms.Padding(15);
@@ -168,8 +186,10 @@
             // 
             // textBoxTotalFloors
             // 
+            this.textBoxTotalFloors.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxTotalFloors.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxTotalFloors.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
-            this.textBoxTotalFloors.Location = new System.Drawing.Point(288, 142);
+            this.textBoxTotalFloors.Location = new System.Drawing.Point(288, 64);
             this.textBoxTotalFloors.Margin = new System.Windows.Forms.Padding(15);
             this.textBoxTotalFloors.Name = "textBoxTotalFloors";
             this.textBoxTotalFloors.Size = new System.Drawing.Size(134, 21);
@@ -477,6 +497,8 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.Location = new System.Drawing.Point(277, 287);
             this.buttonAdd.Margin = new System.Windows.Forms.Padding(15);
@@ -484,11 +506,13 @@
             this.buttonAdd.Size = new System.Drawing.Size(100, 36);
             this.buttonAdd.TabIndex = 23;
             this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonEdit
             // 
+            this.buttonEdit.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonEdit.Location = new System.Drawing.Point(381, 287);
             this.buttonEdit.Margin = new System.Windows.Forms.Padding(15);
@@ -496,11 +520,13 @@
             this.buttonEdit.Size = new System.Drawing.Size(100, 36);
             this.buttonEdit.TabIndex = 24;
             this.buttonEdit.Text = "Изменить";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDel
             // 
+            this.buttonDel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDel.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonDel.Location = new System.Drawing.Point(484, 287);
             this.buttonDel.Margin = new System.Windows.Forms.Padding(15);
@@ -508,11 +534,13 @@
             this.buttonDel.Size = new System.Drawing.Size(100, 36);
             this.buttonDel.TabIndex = 25;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // comboBoxType
             // 
+            this.comboBoxType.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.comboBoxType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxType.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
@@ -530,7 +558,7 @@
             // 
             this.labelTotalFloors.AutoSize = true;
             this.labelTotalFloors.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
-            this.labelTotalFloors.Location = new System.Drawing.Point(285, 127);
+            this.labelTotalFloors.Location = new System.Drawing.Point(285, 48);
             this.labelTotalFloors.Margin = new System.Windows.Forms.Padding(15);
             this.labelTotalFloors.Name = "labelTotalFloors";
             this.labelTotalFloors.Size = new System.Drawing.Size(111, 13);

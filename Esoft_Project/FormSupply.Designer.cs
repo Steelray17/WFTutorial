@@ -54,6 +54,8 @@
             // 
             // textBoxPrice
             // 
+            this.textBoxPrice.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPrice.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxPrice.Location = new System.Drawing.Point(12, 169);
             this.textBoxPrice.Margin = new System.Windows.Forms.Padding(15);
@@ -166,6 +168,8 @@
             // 
             // buttonDel
             // 
+            this.buttonDel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDel.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonDel.Location = new System.Drawing.Point(701, 196);
             this.buttonDel.Margin = new System.Windows.Forms.Padding(15);
@@ -173,11 +177,13 @@
             this.buttonDel.Size = new System.Drawing.Size(100, 36);
             this.buttonDel.TabIndex = 16;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // buttonEdit
             // 
+            this.buttonEdit.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonEdit.Location = new System.Drawing.Point(595, 196);
             this.buttonEdit.Margin = new System.Windows.Forms.Padding(15);
@@ -185,11 +191,13 @@
             this.buttonEdit.Size = new System.Drawing.Size(100, 36);
             this.buttonEdit.TabIndex = 15;
             this.buttonEdit.Text = "Изменить";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.Location = new System.Drawing.Point(489, 196);
             this.buttonAdd.Margin = new System.Windows.Forms.Padding(15);
@@ -197,11 +205,13 @@
             this.buttonAdd.Size = new System.Drawing.Size(100, 36);
             this.buttonAdd.TabIndex = 14;
             this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // comboBoxAgents
             // 
+            this.comboBoxAgents.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.comboBoxAgents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxAgents.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxAgents.FormattingEnabled = true;
             this.comboBoxAgents.Location = new System.Drawing.Point(12, 49);
@@ -212,6 +222,8 @@
             // 
             // comboBoxClients
             // 
+            this.comboBoxClients.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.comboBoxClients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxClients.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxClients.FormattingEnabled = true;
             this.comboBoxClients.Location = new System.Drawing.Point(12, 89);
@@ -222,6 +234,8 @@
             // 
             // comboBoxRealEstate
             // 
+            this.comboBoxRealEstate.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.comboBoxRealEstate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxRealEstate.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxRealEstate.FormattingEnabled = true;
             this.comboBoxRealEstate.Location = new System.Drawing.Point(12, 129);

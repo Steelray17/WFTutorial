@@ -91,6 +91,8 @@
             // 
             // comboBoxClients
             // 
+            this.comboBoxClients.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.comboBoxClients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxClients.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxClients.Location = new System.Drawing.Point(12, 28);
             this.comboBoxClients.Margin = new System.Windows.Forms.Padding(15);
@@ -100,6 +102,8 @@
             // 
             // comboBoxAgents
             // 
+            this.comboBoxAgents.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.comboBoxAgents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxAgents.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxAgents.Location = new System.Drawing.Point(12, 68);
             this.comboBoxAgents.Margin = new System.Windows.Forms.Padding(15);
@@ -109,6 +113,8 @@
             // 
             // comboBoxType
             // 
+            this.comboBoxType.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.comboBoxType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxType.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxType.Items.AddRange(new object[] {
             "Квартира",
@@ -123,6 +129,8 @@
             // 
             // textBoxMinPrice
             // 
+            this.textBoxMinPrice.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxMinPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMinPrice.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMinPrice.Location = new System.Drawing.Point(180, 29);
             this.textBoxMinPrice.Margin = new System.Windows.Forms.Padding(15);
@@ -132,6 +140,8 @@
             // 
             // textBoxMaxPrice
             // 
+            this.textBoxMaxPrice.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxMaxPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMaxPrice.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMaxPrice.Location = new System.Drawing.Point(180, 68);
             this.textBoxMaxPrice.Margin = new System.Windows.Forms.Padding(15);
@@ -391,6 +401,8 @@
             // 
             // buttonDel
             // 
+            this.buttonDel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDel.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonDel.Location = new System.Drawing.Point(716, 211);
             this.buttonDel.Margin = new System.Windows.Forms.Padding(15);
@@ -398,11 +410,13 @@
             this.buttonDel.Size = new System.Drawing.Size(100, 36);
             this.buttonDel.TabIndex = 28;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // buttonEdit
             // 
+            this.buttonEdit.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonEdit.Location = new System.Drawing.Point(612, 211);
             this.buttonEdit.Margin = new System.Windows.Forms.Padding(15);
@@ -410,11 +424,13 @@
             this.buttonEdit.Size = new System.Drawing.Size(100, 36);
             this.buttonEdit.TabIndex = 27;
             this.buttonEdit.Text = "Изменить";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.Location = new System.Drawing.Point(506, 211);
             this.buttonAdd.Margin = new System.Windows.Forms.Padding(15);
@@ -422,11 +438,13 @@
             this.buttonAdd.Size = new System.Drawing.Size(100, 36);
             this.buttonAdd.TabIndex = 26;
             this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // textBoxMinArea
             // 
+            this.textBoxMinArea.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxMinArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMinArea.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMinArea.Location = new System.Drawing.Point(310, 29);
             this.textBoxMinArea.Margin = new System.Windows.Forms.Padding(15);
@@ -436,6 +454,8 @@
             // 
             // textBoxMaxArea
             // 
+            this.textBoxMaxArea.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxMaxArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMaxArea.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMaxArea.Location = new System.Drawing.Point(310, 68);
             this.textBoxMaxArea.Margin = new System.Windows.Forms.Padding(15);
@@ -445,6 +465,8 @@
             // 
             // textBoxMinRooms
             // 
+            this.textBoxMinRooms.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxMinRooms.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMinRooms.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMinRooms.Location = new System.Drawing.Point(579, 29);
             this.textBoxMinRooms.Margin = new System.Windows.Forms.Padding(15);
@@ -454,6 +476,7 @@
             // 
             // textBoxMinFloor
             // 
+            this.textBoxMinFloor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.textBoxMinFloor.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMinFloor.Location = new System.Drawing.Point(449, 29);
             this.textBoxMinFloor.Margin = new System.Windows.Forms.Padding(15);
@@ -463,6 +486,7 @@
             // 
             // textBoxMaxFloor
             // 
+            this.textBoxMaxFloor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.textBoxMaxFloor.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMaxFloor.Location = new System.Drawing.Point(449, 68);
             this.textBoxMaxFloor.Margin = new System.Windows.Forms.Padding(15);
@@ -538,6 +562,8 @@
             // 
             // textBoxMaxRooms
             // 
+            this.textBoxMaxRooms.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxMaxRooms.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMaxRooms.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMaxRooms.Location = new System.Drawing.Point(579, 68);
             this.textBoxMaxRooms.Margin = new System.Windows.Forms.Padding(15);
@@ -557,6 +583,8 @@
             // 
             // textBoxMinFloors
             // 
+            this.textBoxMinFloors.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxMinFloors.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMinFloors.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMinFloors.Location = new System.Drawing.Point(449, 29);
             this.textBoxMinFloors.Margin = new System.Windows.Forms.Padding(15);
@@ -566,6 +594,8 @@
             // 
             // textBoxMaxFloors
             // 
+            this.textBoxMaxFloors.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxMaxFloors.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMaxFloors.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold);
             this.textBoxMaxFloors.Location = new System.Drawing.Point(449, 68);
             this.textBoxMaxFloors.Margin = new System.Windows.Forms.Padding(15);
@@ -599,7 +629,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 250);
+            this.ClientSize = new System.Drawing.Size(820, 250);
             this.Controls.Add(this.labelMaxFloors);
             this.Controls.Add(this.labelMinFloors);
             this.Controls.Add(this.textBoxMaxFloors);
